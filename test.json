@@ -1,0 +1,27 @@
+// check
+{
+    "empPhonenum":"0812345678",
+    "empPassword":"somchai123" 
+}
+
+//insert
+
+{
+    "custName":"",
+    "custEmail":"@mail.com",
+    "custImage":"",
+    "custPhonenum":"0956778987",
+    "custPassword":""
+ }
+
+ //update
+ {
+    "custId":"9",
+    "custName":"",
+    "custEmail":"@mail.com",
+    "custImage":"",
+    "custPhonenum":"0956778777",
+    "custPassword":""
+ }
+
+
