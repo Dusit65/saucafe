@@ -118,4 +118,19 @@ class Employee{
             return false;
         }
     }
+
+    //function deleteEmp
+    public function deleteEmp()
+    {
+        $strSQL = "DELETE FROM employee_tb WHERE empId = :empId";
+        $this->empId = intval(htmlspecialchars(strip_tags($this->empId)));
+        $stmt = $this->connDB->prepare($strSQL);
+        $stmt->bindParam(":empId", $this->empId);
+        $stmt->execute();
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

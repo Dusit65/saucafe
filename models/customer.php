@@ -122,5 +122,21 @@ public function updateCust(){
     } else {
         return false;
     }
+}   
+
+    //function deleteCust
+    public function deleteCust()
+    {
+        $strSQL = "DELETE FROM customer_tb WHERE custId = :custId";
+        $this->custId = intval(htmlspecialchars(strip_tags($this->custId)));
+        $stmt = $this->connDB->prepare($strSQL);
+        $stmt->bindParam(":custId", $this->custId);
+        $stmt->execute();
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            return false;
+        }
 }
+
 }

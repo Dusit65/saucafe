@@ -7,21 +7,18 @@
 //insert
 
 {
-    "custName":"",
-    "custEmail":"@mail.com",
-    "custImage":"",
-    "custPhonenum":"0956778987",
-    "custPassword":""
- }
+    "catId":"3",
+    "catName":"เครื่องดื่มชา"
+}
 
  //update
  {
-    "custId":"9",
-    "custName":"",
-    "custEmail":"@mail.com",
-    "custImage":"",
-    "custPhonenum":"0956778777",
-    "custPassword":""
+    "catId":"5",
+    "catName":"เครื่องดื่มปัน"
  }
 
+//  delete
+ {
+    "itemId":"11",
+ }
 
